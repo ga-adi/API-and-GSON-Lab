@@ -29,3 +29,7 @@ One restriction: You ***cannot*** use the Walmart API or the Gmail SDK.
 #### Deliverable
 
 An Android Studio project, with no particular format. It just has to meet the above requirements.
+
+#### Resources
+
+- [Docs on Marvel's Superheroic REST Api](http://www.codingricky.com/marvels-superheroic-rest-api/)
