@@ -35,41 +35,52 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(String... params) {
             String search = "";
             try {
-                URL url = new URL(params[0]);
+                URL url = new URL(getUrlString(params[0]));
                 HttpURLConnection connection = (HttpURLConnection)url.openConnection();
                 connection.setRequestMethod("GET");
 
                 connection.connect();
                 InputStream inputStream = connection.getInputStream();
+                String data = getInputData(inputStream);
 
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
+                //call Gson.fromJson(data)
+
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             return null;
         }
-    }
 
-    private String getInputData(InputStream inStream) throws IOException{
-        StringBuilder builder = new StringBuilder();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inStream));
+        private String getInputData(InputStream inStream) throws IOException{
+            StringBuilder builder = new StringBuilder();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inStream));
 
-        String character;
+            String character;
 
-        while ((character = reader.readLine()) != null){
-            builder.append(character);
+            while ((character = reader.readLine()) != null){
+                builder.append(character);
+            }
+
+            return builder.toString();
         }
 
-        return builder.toString();
-    }
+        private String getUrlString(String query)
+                throws UnsupportedEncodingException, NoSuchAlgorithmException {
+            String mUrl = "http://gateway.marvel.com/v1/public/characters?nameStartsWith=%s&ts=%d&apikey=%s&hash=%s";
+            long ts = System.currentTimeMillis();
+            String publicKey = getString(R.string.marvel_public_key);
+            String privateKey = getString(R.string.marvel_private_key);
+            return String.format(mUrl, query, ts, publicKey, getMarvelMd5Digest(ts, privateKey, publicKey));
+        }
 
-    private String getMarvelMd5Digest(long timeStamp, String privateKey, String publicKey)
-            throws UnsupportedEncodingException, NoSuchAlgorithmException {
-        String inputString = timeStamp + privateKey + publicKey;
-        byte[] inputBytes = inputString.getBytes("UTF-8");
-        MessageDigest md = MessageDigest.getInstance("MD5");
-        byte[] digest = md.digest(inputBytes);
-        return digest.toString();
+        private String getMarvelMd5Digest(long timeStamp, String privateKey, String publicKey)
+                throws UnsupportedEncodingException, NoSuchAlgorithmException {
+            String inputString = timeStamp + privateKey + publicKey;
+            byte[] inputBytes = inputString.getBytes("UTF-8");
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            byte[] digest = md.digest(inputBytes);
+            return digest.toString();
+        }
+
     }
 }
