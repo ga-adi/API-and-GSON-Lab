@@ -83,6 +83,7 @@ public class CharacterAdapter extends RecyclerView.Adapter<CharacterAdapter.View
         protected void onPostExecute(Drawable drawable) {
             super.onPostExecute(drawable);
             mViewHolder.mImage.setImageDrawable(drawable);
+            mViewHolder.mImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
         }
     }
 }
