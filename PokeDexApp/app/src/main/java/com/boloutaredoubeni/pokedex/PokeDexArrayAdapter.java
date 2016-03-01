@@ -15,8 +15,8 @@ import java.util.List;
 public class PokeDexArrayAdapter extends ArrayAdapter<PokemonResource> {
     private LayoutInflater mInflater;
 
-    public PokeDexArrayAdapter(Context context, int resource, List<PokemonResource> objects) {
-        super(context, R.layout.pokedex_item, objects);
+    public PokeDexArrayAdapter(Context context, List<PokemonResource> objects) {
+        super(context, R.layout.pokemon_item, objects);
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -24,14 +24,15 @@ public class PokeDexArrayAdapter extends ArrayAdapter<PokemonResource> {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.pokedex_item, parent, false);
+            convertView = mInflater.inflate(R.layout.pokemon_item, parent, false);
             holder = new ViewHolder();
-            holder.name = (TextView) convertView.findViewById(R.id.pokemon_name);
+            holder.name = (TextView) convertView.findViewById(R.id.name);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        holder.name.setText(getItem(position).getName());
+        String name  = getItem(position).getName();
+        holder.name.setText(name);
         return convertView;
     }
 

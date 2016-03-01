@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 import okhttp3.OkHttpClient;
@@ -17,12 +19,16 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity {
 
     private ListView mListView;
+    private PokeDexArrayAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //
+
+        mListView = (ListView)findViewById(R.id.pokedex);
+        mAdapter = new PokeDexArrayAdapter(this, new ArrayList<PokemonResource>());
+        mListView.setAdapter(mAdapter);
     }
 
     @Override
@@ -40,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 Request request = new Request.Builder().url("http://pokeapi.co/api/v2/pokemon/").build();
                 Response response = client.newCall(request).execute();
                 Gson gson = new Gson();
-                ArrayList<PokemonResource> pokemonResources = new ArrayList<>();
-                return gson.fromJson(response.body().string(), pokemonResources.getClass());
+                Type pokemonResourceType = new TypeToken<ArrayList<PokemonResource>>() {}.getType();
+                return gson.fromJson(response.body().string(), pokemonResourceType);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -51,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(ArrayList<PokemonResource> pokemonResources) {
             super.onPostExecute(pokemonResources);
-            // TODO: put the returned stuff in the list view
+            mAdapter.clear();
+            mAdapter.addAll(pokemonResources);
+            mAdapter.notifyDataSetChanged();
         }
     }
 }
