@@ -1,0 +1,1039 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.13601961149116448,
+            "longitude_delta": 0.1394451300000128
+        },
+        "center": {
+            "latitude": 40.73004809613235,
+            "longitude": -73.94678915
+        }
+    },
+    "total": 9207,
+    "businesses": [
+        {
+            "is_claimed": false,
+            "rating": 4,
+            "mobile_url": "http://m.yelp.com/biz/lombardis-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 4635,
+            "name": "Lombardi's Pizza",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "http://www.yelp.com/biz/lombardis-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1441940612,
+            "phone": "2129417994",
+            "snippet_text": "On a recent trip to NYC we were told this pizza spot is a must go-to. We ended up there in a Wednesday late afternoon and got seated right away. No line...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Ijho1jmBScMOlNQU8KIy3Q/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/POj_4SivFN0zxwkK49jYTg/ms.jpg",
+            "display_phone": "+1-212-941-7994",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "lombardis-pizza-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Mulberry St & Mott St",
+                "city": "New York",
+                "display_address": [
+                    "32 Spring St",
+                    "Nolita",
+                    "New York, NY 10012"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Nolita"
+                ],
+                "postal_code": "10012",
+                "country_code": "US",
+                "address": [
+                    "32 Spring St"
+                ],
+                "coordinate": {
+                    "latitude": 40.721515,
+                    "longitude": -73.995735
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/prince-st-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 580,
+            "name": "Prince St. Pizza",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/prince-st-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1448660225,
+            "phone": "2129664100",
+            "snippet_text": "All the restaurants on this block are amazing, and this little pizza shop is just as good as its neighbors. The spicy spring pizza is worth the hype and the...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6stMvoOUBxXJEG6wnWW95w/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/fYdlDilWRpt682x0MdX9KA/ms.jpg",
+            "display_phone": "+1-212-966-4100",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "prince-st-pizza-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Mott St & Elizabeth St",
+                "city": "New York",
+                "display_address": [
+                    "27 Prince St",
+                    "Nolita",
+                    "New York, NY 10012"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Nolita"
+                ],
+                "postal_code": "10012",
+                "country_code": "US",
+                "address": [
+                    "27 Prince St"
+                ],
+                "coordinate": {
+                    "latitude": 40.7229087705545,
+                    "longitude": -73.9944863319397
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/julianas-pizza-brooklyn-5?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 878,
+            "name": "Juliana's Pizza",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/julianas-pizza-brooklyn-5?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "American (Traditional)",
+                    "tradamerican"
+                ]
+            ],
+            "menu_date_updated": 1442109498,
+            "phone": "7185966700",
+            "snippet_text": "Here's my tip: go for lunch in the middle of the week on a miserably rainy day in late February. The place was almost completely empty-- certainly no line...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/2MN0FP1Ni5tVKp7OpfkaRQ/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/uji6ogioa8ikgpzTx4oH-A/ms.jpg",
+            "display_phone": "+1-718-596-6700",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "julianas-pizza-brooklyn-5",
+            "is_closed": false,
+            "location": {
+                "city": "Brooklyn",
+                "display_address": [
+                    "19 Old Fulton St",
+                    "DUMBO",
+                    "Brooklyn, NY 11201"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "DUMBO"
+                ],
+                "postal_code": "11201",
+                "country_code": "US",
+                "address": [
+                    "19 Old Fulton St"
+                ],
+                "coordinate": {
+                    "latitude": 40.7025851365081,
+                    "longitude": -73.9935619790676
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4,
+            "mobile_url": "http://m.yelp.com/biz/patzeria-perfect-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 892,
+            "name": "Patzeria Perfect Pizza",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "http://www.yelp.com/biz/patzeria-perfect-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Diners",
+                    "diners"
+                ]
+            ],
+            "menu_date_updated": 1441972091,
+            "phone": "2125757646",
+            "snippet_text": "A very fine New York slice, indeed. Right in the heart of the theatre district. \n\nI always stop by when I'm around midtown. The cheese pizza is tops, in my...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/DKwOp9BKLT0qu8A6a20l3g/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/n1mW3aDzDxOOiDpYRuaCNQ/ms.jpg",
+            "display_phone": "+1-212-575-7646",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "patzeria-perfect-pizza-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "7th Ave & Broadway",
+                "city": "New York",
+                "display_address": [
+                    "231 W 46th St",
+                    "Theater District",
+                    "New York, NY 10036"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Theater District",
+                    "Midtown West"
+                ],
+                "postal_code": "10036",
+                "country_code": "US",
+                "address": [
+                    "231 W 46th St"
+                ],
+                "coordinate": {
+                    "latitude": 40.7596523033459,
+                    "longitude": -73.9873650623614
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4,
+            "mobile_url": "http://m.yelp.com/biz/ny-pizza-suprema-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 891,
+            "name": "NY Pizza Suprema",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "http://www.yelp.com/biz/ny-pizza-suprema-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1442354500,
+            "phone": "2125948939",
+            "snippet_text": "Delicious! I ordered a Chicken Bacon Ranch slice and a Pepperoni slice the first time I came here and loved both. Some of the best pizza of my life!\n\nWe...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/J21NRy9gpMWOWYdTuCQO2w/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/VDJtMoBxg69c-TNxWTLeqg/ms.jpg",
+            "display_phone": "+1-212-594-8939",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "ny-pizza-suprema-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "30th St & 31st St",
+                "city": "New York",
+                "display_address": [
+                    "413 8th Ave",
+                    "Midtown West",
+                    "New York, NY 10001"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Midtown West",
+                    "Chelsea"
+                ],
+                "postal_code": "10001",
+                "country_code": "US",
+                "address": [
+                    "413 8th Ave"
+                ],
+                "coordinate": {
+                    "latitude": 40.7502059936523,
+                    "longitude": -73.9953231811523
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/my-pie-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 224,
+            "name": "My Pie",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/my-pie-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Italian",
+                    "italian"
+                ],
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1442104181,
+            "phone": "2123171850",
+            "snippet_text": "One word: DELICIOUS!!!\n\nNice, thin, crispy crust. Fresh ingredients. Great pizza!! I ordered a slice of \"Grandma's Pizza\"-GREAT!! It has regular mozzarella...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ilSoU00moQQTyx6cHySroQ/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/MS5_HchxOg5s9I8Qob3J_A/ms.jpg",
+            "display_phone": "+1-212-317-1850",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "my-pie-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "57th St & 56th St",
+                "city": "New York",
+                "display_address": [
+                    "696 Lexington Ave",
+                    "Midtown East",
+                    "New York, NY 10022"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Midtown East"
+                ],
+                "postal_code": "10022",
+                "country_code": "US",
+                "address": [
+                    "696 Lexington Ave"
+                ],
+                "coordinate": {
+                    "latitude": 40.7608223,
+                    "longitude": -73.9693985
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4,
+            "mobile_url": "http://m.yelp.com/biz/adriennes-pizzabar-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 916,
+            "name": "Adrienne's Pizzabar",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "http://www.yelp.com/biz/adriennes-pizzabar-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Italian",
+                    "italian"
+                ]
+            ],
+            "menu_date_updated": 1456333922,
+            "phone": "2122483838",
+            "snippet_text": "Adrienne's Pizza Bar\nNY Manhattan FiDi Stone Street\n9pm Friday 26th February 2016\nFour Stars\n\nThey were able to seat 7 of us in the back. The area was a bit...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/PnaMWrO_rB7-RuBr2wjaoA/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Mib0AexHMXatY_zq9rssKg/ms.jpg",
+            "display_phone": "+1-212-248-3838",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "adriennes-pizzabar-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Hanover Sq & Coenties Aly",
+                "city": "New York",
+                "display_address": [
+                    "54 Stone St",
+                    "Financial District",
+                    "New York, NY 10004"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Financial District"
+                ],
+                "postal_code": "10004",
+                "country_code": "US",
+                "address": [
+                    "54 Stone St"
+                ],
+                "coordinate": {
+                    "latitude": 40.7043362,
+                    "longitude": -74.0101733
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "http://m.yelp.com/biz/grimaldis-brooklyn?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 3768,
+            "name": "Grimaldi's",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "http://www.yelp.com/biz/grimaldis-brooklyn?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "phone": "7188584300",
+            "snippet_text": "My traveling buddy from Australia was eager to try this upon reading rave reviews about this place. As we went during winter time, the wait wasn' t too bad...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/wPyhEaumm8i1oYSReQMCsg/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/rJSkXmswsARlDd7NxSawRg/ms.jpg",
+            "display_phone": "+1-718-858-4300",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "grimaldis-brooklyn",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Dock St & York St",
+                "city": "Brooklyn",
+                "display_address": [
+                    "1 Front St",
+                    "DUMBO",
+                    "Brooklyn, NY 11201"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "DUMBO"
+                ],
+                "postal_code": "11201",
+                "country_code": "US",
+                "address": [
+                    "1 Front St"
+                ],
+                "coordinate": {
+                    "latitude": 40.702643,
+                    "longitude": -73.993244
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/patsys-pizzeria-brooklyn-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 169,
+            "name": "Patsys Pizzeria",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/patsys-pizzeria-brooklyn-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Italian",
+                    "italian"
+                ]
+            ],
+            "menu_date_updated": 1451815439,
+            "phone": "7186222268",
+            "snippet_text": "As I'm sure you have read on many other reviews for this place, the service is fantastic. From the moment we walked in the door we were greeted with smiles....",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/qqQpMLkmFgONnwwUyDZC0g/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/YIMODP6Ax70_HGh5vrUqKQ/ms.jpg",
+            "display_phone": "+1-718-622-2268",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "patsys-pizzeria-brooklyn-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "5th Ave & Flatbush Ave",
+                "city": "Brooklyn",
+                "display_address": [
+                    "450 Dean St",
+                    "Prospect Heights",
+                    "Brooklyn, NY 11217"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Prospect Heights",
+                    "Park Slope"
+                ],
+                "postal_code": "11217",
+                "country_code": "US",
+                "address": [
+                    "450 Dean St"
+                ],
+                "coordinate": {
+                    "latitude": 40.6817474365234,
+                    "longitude": -73.9762573242188
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/lucali-brooklyn-3?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 777,
+            "name": "Lucali",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/lucali-brooklyn-3?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1441981839,
+            "phone": "7188584086",
+            "snippet_text": "Best Pizza Ever.\nSeriously.\nBring Cash and BYOB.......",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Sfug7KTJfLndLKH3kgNXBg/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/3LrPUZ60ihge9ljwdfTWfw/ms.jpg",
+            "display_phone": "+1-718-858-4086",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "lucali-brooklyn-3",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Carroll St & Summit St",
+                "city": "Brooklyn",
+                "display_address": [
+                    "575 Henry St",
+                    "Carroll Gardens",
+                    "Brooklyn, NY 11231"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Carroll Gardens"
+                ],
+                "postal_code": "11231",
+                "country_code": "US",
+                "address": [
+                    "575 Henry St"
+                ],
+                "coordinate": {
+                    "latitude": 40.681778,
+                    "longitude": -74.000214
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4,
+            "mobile_url": "http://m.yelp.com/biz/joes-pizza-new-york-4?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 1272,
+            "name": "Joe's Pizza",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "http://www.yelp.com/biz/joes-pizza-new-york-4?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1441940634,
+            "phone": "2123661182",
+            "snippet_text": "You can't get pickier than me when it comes to pizza. But I only ask for three things:\n\n-A thin, crispy crust.\n-Tomato sauce that's not overly garlicky and...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3hO5k9wLRb2D_OvScdd7mw/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/8bEKj3jdBNz55yYRhrhdRQ/ms.jpg",
+            "display_phone": "+1-212-366-1182",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "joes-pizza-new-york-4",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Avenue Of The Americas & Minetta Ln",
+                "city": "New York",
+                "display_address": [
+                    "7 Carmine St",
+                    "West Village",
+                    "New York, NY 10014"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "West Village"
+                ],
+                "postal_code": "10014",
+                "country_code": "US",
+                "address": [
+                    "7 Carmine St"
+                ],
+                "coordinate": {
+                    "latitude": 40.7305599,
+                    "longitude": -74.0021299
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4,
+            "mobile_url": "http://m.yelp.com/biz/bleecker-street-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 1279,
+            "name": "Bleecker Street Pizza",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "http://www.yelp.com/biz/bleecker-street-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1456317843,
+            "phone": "2129244466",
+            "snippet_text": "The cure for being drunk is to stop being an irresponsible human being. However, the next best thing is pizza.\n\nIf I had to guess, probably 10% of the...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/K0AY54PM-8T7dNjO0grH1g/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/k3nBVwBTL8mE0m4VQIr54w/ms.jpg",
+            "display_phone": "+1-212-924-4466",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "bleecker-street-pizza-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Commerce St & S 7 Ave",
+                "city": "New York",
+                "display_address": [
+                    "69 7th Ave S",
+                    "West Village",
+                    "New York, NY 10014"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "West Village"
+                ],
+                "postal_code": "10014",
+                "country_code": "US",
+                "address": [
+                    "69 7th Ave S"
+                ],
+                "coordinate": {
+                    "latitude": 40.7319808,
+                    "longitude": -74.003567
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/paulie-gees-brooklyn?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 765,
+            "name": "Paulie Gee's",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/paulie-gees-brooklyn?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Vegan",
+                    "vegan"
+                ],
+                [
+                    "Italian",
+                    "italian"
+                ]
+            ],
+            "phone": "3479873747",
+            "snippet_text": "So. Good. Forget grimaldi's it's all about Paulie gee's\nWe ordered five pies for our group, and each one was on point. Don't think you can go wrong with any...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/iYZni1YxaHyJimQW_CWJcQ/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/U1Y5n7k-8l6IUcrFD9zMig/ms.jpg",
+            "display_phone": "+1-347-987-3747",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "paulie-gees-brooklyn",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "West St & Franklin St",
+                "city": "Brooklyn",
+                "display_address": [
+                    "60 Greenpoint Ave",
+                    "Greenpoint",
+                    "Brooklyn, NY 11222"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Greenpoint"
+                ],
+                "postal_code": "11222",
+                "country_code": "US",
+                "address": [
+                    "60 Greenpoint Ave"
+                ],
+                "coordinate": {
+                    "latitude": 40.729538,
+                    "longitude": -73.958557
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/sottocasa-pizzeria-boerum-hill-brooklyn?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 375,
+            "name": "Sottocasa Pizzeria- Boerum Hill",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/sottocasa-pizzeria-boerum-hill-brooklyn?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Italian",
+                    "italian"
+                ]
+            ],
+            "menu_date_updated": 1456533852,
+            "phone": "7188528758",
+            "snippet_text": "Excellent little restaurant specializing in Neapolitan pizza; the kind of pizza that differs from many of the usual NYC pizza spots, both the casual corner...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/tED2xd7BiwP7Jq2yte1_SQ/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/Z2t4FnLfIQ2rNSoEI3veXA/ms.jpg",
+            "display_phone": "+1-718-852-8758",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "sottocasa-pizzeria-boerum-hill-brooklyn",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Hoyt St & Smith St",
+                "city": "Brooklyn",
+                "display_address": [
+                    "298 Atlantic Ave",
+                    "Cobble Hill",
+                    "Brooklyn, NY 11201"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Cobble Hill",
+                    "Boerum Hill"
+                ],
+                "postal_code": "11201",
+                "country_code": "US",
+                "address": [
+                    "298 Atlantic Ave"
+                ],
+                "coordinate": {
+                    "latitude": 40.68838,
+                    "longitude": -73.98895
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/little-italy-pizza-new-york-17?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 88,
+            "name": "Little Italy Pizza",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/little-italy-pizza-new-york-17?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Italian",
+                    "italian"
+                ]
+            ],
+            "menu_date_updated": 1442206608,
+            "phone": "2127876700",
+            "snippet_text": "In general, the UWS is fortunate to have a great place like this. But in addition, lots of the few good places in the neighborhood are disappearing steadily...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/sDHNthTXHRmWOupT9mwT1Q/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/WBZY-oy2WKWzn7vS5C2B9g/ms.jpg",
+            "display_phone": "+1-212-787-6700",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "little-italy-pizza-new-york-17",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "92nd St & 91st St",
+                "city": "New York",
+                "display_address": [
+                    "2476 Broadway",
+                    "Upper West Side",
+                    "New York, NY 10025"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Upper West Side"
+                ],
+                "postal_code": "10025",
+                "country_code": "US",
+                "address": [
+                    "2476 Broadway"
+                ],
+                "coordinate": {
+                    "latitude": 40.7918751922647,
+                    "longitude": -73.9735541478506
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/peppinos-brooklyn-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 262,
+            "name": "Peppino's",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/peppinos-brooklyn-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Italian",
+                    "italian"
+                ]
+            ],
+            "phone": "7187687244",
+            "snippet_text": "This place is absolutely amazing and is one of my favorites in all of Brooklyn. We eat here often and food is superb.  We get the shrimp oreganatta hero and...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/lTgyLN7CmcccK2J0siYNDQ/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/hVOn-a2Ihssd97RXldc9Bw/ms.jpg",
+            "display_phone": "+1-718-768-7244",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "peppinos-brooklyn-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "7th Ave & 6th Ave",
+                "city": "Brooklyn",
+                "display_address": [
+                    "469 5th Ave",
+                    "South Slope",
+                    "Brooklyn, NY 11215"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "South Slope",
+                    "Park Slope"
+                ],
+                "postal_code": "11215",
+                "country_code": "US",
+                "address": [
+                    "469 5th Ave"
+                ],
+                "coordinate": {
+                    "latitude": 40.668221,
+                    "longitude": -73.986936
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/piacere-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 376,
+            "name": "Piacere",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/piacere-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ],
+                [
+                    "Italian",
+                    "italian"
+                ]
+            ],
+            "menu_date_updated": 1455393483,
+            "phone": "2122194080",
+            "snippet_text": "This was my first trip to New York, and Piacere was the most memorable place I had dinner at.\nThe Diavola and San Daniele pizzas were amazing, and the...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/AGxq24A1WTXvXXTqvdm5zw/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/s9H6-wXRfwjFwu1IMoskrw/ms.jpg",
+            "display_phone": "+1-212-219-4080",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "eat24",
+            "id": "piacere-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Bowery & Elizabeth St",
+                "city": "New York",
+                "display_address": [
+                    "351 Broome St",
+                    "Little Italy",
+                    "New York, NY 10013"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Little Italy",
+                    "Nolita"
+                ],
+                "postal_code": "10013",
+                "country_code": "US",
+                "address": [
+                    "351 Broome St"
+                ],
+                "coordinate": {
+                    "latitude": 40.7196979,
+                    "longitude": -73.9951175
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/louies-pizza-elmhurst-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 245,
+            "name": "Louie's Pizza",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/louies-pizza-elmhurst-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Italian",
+                    "italian"
+                ],
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "phone": "7184409346",
+            "snippet_text": "Why am I only finding out about this gem??? I am born and raised in Jackson Heights and somehow this place flew by radar unnoticed. Looking from the...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/r0xOCiLspPJm4MjFE4uNiA/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/hIFw4ZKLV6NGZlsICB09Fw/ms.jpg",
+            "display_phone": "+1-718-440-9346",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "louies-pizza-elmhurst-2",
+            "is_closed": false,
+            "location": {
+                "city": "Elmhurst",
+                "display_address": [
+                    "81-34 Baxter Ave",
+                    "Elmhurst",
+                    "Elmhurst, NY 11373"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Elmhurst"
+                ],
+                "postal_code": "11373",
+                "country_code": "US",
+                "address": [
+                    "81-34 Baxter Ave"
+                ],
+                "coordinate": {
+                    "latitude": 40.7459,
+                    "longitude": -73.8834
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/rizzos-fine-pizza-co-new-york-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 333,
+            "name": "Rizzo's Fine Pizza Co.",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/rizzos-fine-pizza-co-new-york-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1455394907,
+            "phone": "6464541262",
+            "snippet_text": "Deserves all five of the stars! \n\nFirst time visiting NYC and decided to use a local Groupon to check out the pizza scene. So there is a Lot of pizza...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qrrj8zjNNyumFvTGkv_7Tg/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/ZDgFfGMVyWFiVHaWuPJfag/ms.jpg",
+            "display_phone": "+1-646-454-1262",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "eat24",
+            "id": "rizzos-fine-pizza-co-new-york-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Avenue B & Houston St",
+                "city": "New York",
+                "display_address": [
+                    "17 Clinton St",
+                    "Lower East Side",
+                    "New York, NY 10002"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Lower East Side"
+                ],
+                "postal_code": "10002",
+                "country_code": "US",
+                "address": [
+                    "17 Clinton St"
+                ],
+                "coordinate": {
+                    "latitude": 40.720852,
+                    "longitude": -73.984456
+                },
+                "state_code": "NY"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4,
+            "mobile_url": "http://m.yelp.com/biz/underground-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 148,
+            "name": "Underground Pizza",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "http://www.yelp.com/biz/underground-pizza-new-york?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=6aGog-pDjCPSfgV8pDG3ug",
+            "categories": [
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "menu_date_updated": 1456444950,
+            "phone": "2124254442",
+            "snippet_text": "Got the Chicken Rollatini (Thurs. lunch special, $8) and the owner asked \"what pasta?\", \"staying or going?\" in a friendly manner plus noted the dish will...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/JJ4xpbCRJWWGYKas6I7n4g/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/XHLJbDHXAixa4WxW1A9cVA/ms.jpg",
+            "display_phone": "+1-212-425-4442",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "underground-pizza-new-york",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "William St & Stone St",
+                "city": "New York",
+                "display_address": [
+                    "3 Hanover Sq",
+                    "Financial District",
+                    "New York, NY 10004"
+                ],
+                "geo_accuracy": 8,
+                "neighborhoods": [
+                    "Financial District"
+                ],
+                "postal_code": "10004",
+                "country_code": "US",
+                "address": [
+                    "3 Hanover Sq"
+                ],
+                "coordinate": {
+                    "latitude": 40.70499,
+                    "longitude": -74.00961
+                },
+                "state_code": "NY"
+            }
+        }
+    ]
+}
