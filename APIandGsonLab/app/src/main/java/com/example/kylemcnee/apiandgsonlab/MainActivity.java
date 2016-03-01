@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView mTextView;
     String mQuery;
-    SearchAsyncTask
+
 
 
     @Override
@@ -33,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(String... params) {
+            String search = "";
             try {
                 URL url = new URL(params[0]);
                 HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+                connection.setRequestMethod("GET");
 
                 connection.connect();
                 InputStream inputStream = connection.getInputStream();
+
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
