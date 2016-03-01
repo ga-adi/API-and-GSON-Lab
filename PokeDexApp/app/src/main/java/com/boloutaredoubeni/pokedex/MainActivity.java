@@ -22,9 +22,13 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    //
+  }
 
+  @Override
+  protected void onResume() {
+    super.onResume();
     new PokedexTask().execute();
-
   }
 
   public class PokedexTask extends AsyncTask<Void, Void, ArrayList<PokemonResource>> {
@@ -35,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url("http://pokeapi.co/api/v2/pokemon/").build();
         Response response = client.newCall(request).execute();
-        return processPokemon(response.body().string());
+        Gson gson = new Gson();
+        ArrayList<PokemonResource> pokemonResources = new ArrayList<>();
+        return gson.fromJson(response.body().string(), pokemonResources.getClass());
       } catch (IOException e) {
         e.printStackTrace();
       }
@@ -46,11 +52,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onPostExecute(ArrayList<PokemonResource> pokemonResources) {
       super.onPostExecute(pokemonResources);
       // TODO: put the returned stuff in the list view
-    }
-
-    private ArrayList<PokemonResource> processPokemon(String body) {
-      Gson gson = new Gson();
-      return gson.fromJson(body, PokeDexJSON.class).getPokemon();
     }
   }
 }
