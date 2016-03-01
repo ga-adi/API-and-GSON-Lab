@@ -9,9 +9,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,5 +60,12 @@ public class MainActivity extends AppCompatActivity {
         return builder.toString();
     }
 
-
+    private String getMarvelMd5Digest(long timeStamp, String privateKey, String publicKey)
+            throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        String inputString = timeStamp + privateKey + publicKey;
+        byte[] inputBytes = inputString.getBytes("UTF-8");
+        MessageDigest md = MessageDigest.getInstance("MD5");
+        byte[] digest = md.digest(inputBytes);
+        return digest.toString();
+    }
 }

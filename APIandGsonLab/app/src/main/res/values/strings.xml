@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">APIandGsonLab</string>
+    <string name="marvel_public_key">9b5f3342813259bc3c85ffadf84ddf64</string>
+    <string name="marvel_private_key">e68e3c0c9f1fa888d88ac392978c9a16302fa458</string>
 </resources>
