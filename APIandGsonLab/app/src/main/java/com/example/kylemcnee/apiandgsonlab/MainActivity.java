@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,21 +20,16 @@ import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView mTextView;
-    String mQuery;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    public class SearchAsyncTask extends AsyncTask<String, Void, Void>{
+    public class SearchAsyncTask extends AsyncTask<String, Void, MarvelSearchResult>{
 
         @Override
-        protected Void doInBackground(String... params) {
+        protected MarvelSearchResult doInBackground(String... params) {
             String search = "";
             try {
                 URL url = new URL(getUrlString(params[0]));
@@ -43,12 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 InputStream inputStream = connection.getInputStream();
                 String data = getInputData(inputStream);
 
-                //call Gson.fromJson(data)
 
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            return null;
+            Gson gson = new Gson();
+            MarvelSearchResult result = gson.fromJson(search, MarvelSearchResult.class);
+
+            return result;
         }
 
         private String getInputData(InputStream inStream) throws IOException{
