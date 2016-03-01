@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView mTextView;
     String mQuery;
+    SearchAsyncTask
 
 
     @Override
