@@ -45,23 +45,24 @@ public class YelpAPI {
      * @param tokenSecret Token secret
      */
     public YelpAPI(String consumerKey, String consumerSecret, String token, String tokenSecret) {
-        this.service =
-                new ServiceBuilder().provider(TwoStepOAuth.class).apiKey(consumerKey)
-                        .apiSecret(consumerSecret).build();
+        this.service = new ServiceBuilder().provider(TwoStepOAuth.class).apiKey(consumerKey).apiSecret(consumerSecret).build();
         this.accessToken = new Token(token, tokenSecret);
     }
 
     /**
      * Creates and sends a request to the Search API by term and location.
-     * <p>
-     * See <a href="http://www.yelp.com/developers/documentation/v2/search_api">Yelp Search API V2</a>
-     * for more info.
-     *
      * @param term <tt>String</tt> of the search term to be queried
      * @param location <tt>String</tt> of the location
      * @return <tt>String</tt> JSON Response
      */
-    public String searchForBusinessesByLocation(String term, String location) {
+    public String searchForBusinessesByKeyword(String term) {
+        OAuthRequest request = createOAuthRequest(SEARCH_PATH);
+        request.addQuerystringParameter("term", term);
+        request.addQuerystringParameter("location", DEFAULT_LOCATION);
+        request.addQuerystringParameter("limit", String.valueOf(SEARCH_LIMIT));
+        return sendRequestAndGetResponse(request);
+    }
+    public String searchForBusinessesByKeyword(String term, String location) {
         OAuthRequest request = createOAuthRequest(SEARCH_PATH);
         request.addQuerystringParameter("term", term);
         request.addQuerystringParameter("location", location);
@@ -71,10 +72,6 @@ public class YelpAPI {
 
     /**
      * Creates and sends a request to the Business API by business ID.
-     * <p>
-     * See <a href="http://www.yelp.com/developers/documentation/v2/business">Yelp Business API V2</a>
-     * for more info.
-     *
      * @param businessID <tt>String</tt> business ID of the requested business
      * @return <tt>String</tt> JSON Response
      */
@@ -101,7 +98,6 @@ public class YelpAPI {
      * @return <tt>String</tt> body of API response
      */
     private String sendRequestAndGetResponse(OAuthRequest request) {
-        System.out.println("Querying " + request.getCompleteUrl() + " ...");
         this.service.signRequest(this.accessToken, request);
         Response response = request.send();
         return response.getBody();
@@ -115,30 +111,19 @@ public class YelpAPI {
      * @param yelpApiCli <tt>YelpAPICLI</tt> command line arguments
      */
     private static void queryAPI(YelpAPI yelpApi, YelpAPICLI yelpApiCli) {
-        String searchResponseJSON =
-                yelpApi.searchForBusinessesByLocation(yelpApiCli.term, yelpApiCli.location);
+        String searchResponseJSON = yelpApi.searchForBusinessesByKeyword(yelpApiCli.term, yelpApiCli.location);
 
         JSONParser parser = new JSONParser();
         JSONObject response = null;
-        try {
-            response = (JSONObject) parser.parse(searchResponseJSON);
-        } catch (ParseException pe) {
-            System.out.println("Error: could not parse JSON response:");
-            System.out.println(searchResponseJSON);
-            System.exit(1);
-        }
+        try {response = (JSONObject) parser.parse(searchResponseJSON);
+        } catch (ParseException pe) {System.exit(1);}
 
         JSONArray businesses = (JSONArray) response.get("businesses");
         JSONObject firstBusiness = (JSONObject) businesses.get(0);
         String firstBusinessID = firstBusiness.get("id").toString();
-        System.out.println(String.format(
-                "%s businesses found, querying business info for the top result \"%s\" ...",
-                businesses.size(), firstBusinessID));
 
         // Select the first business and display business details
         String businessResponseJSON = yelpApi.searchByBusinessId(firstBusinessID.toString());
-        System.out.println(String.format("Result for business \"%s\" found:", firstBusinessID));
-        System.out.println(businessResponseJSON);
     }
 
     /**

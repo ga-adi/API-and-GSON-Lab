@@ -5,12 +5,7 @@ package com.example.api_gson_lab;
  */
 public class YelpLocations {
     private String name;
-    private int rating;
-
-    public YelpLocations(String name, int rating) {
-        this.name = name;
-        this.rating = rating;
-    }
+    private double rating;
 
     public String getName() {
         return name;
@@ -20,11 +15,11 @@ public class YelpLocations {
         this.name = name;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 

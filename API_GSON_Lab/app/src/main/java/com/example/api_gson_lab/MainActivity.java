@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter<String> mAdapter;
     FloatingActionButton mFab;
     YelpAsyncTask mTask;
-    String mSearchString = "https://api.yelp.com/v2/search/?location=New york, ny&term=";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
         mAdapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mSearchList);
         mListView.setAdapter(mAdapter);
 
-        YelpAPI credentials = new YelpAPI(YelpAPI.CONSUMER_KEY,YelpAPI.CONSUMER_SECRET,YelpAPI.TOKEN,YelpAPI.TOKEN_SECRET);
-
         mFab = (FloatingActionButton) findViewById(R.id.fab);
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,10 +74,8 @@ public class MainActivity extends AppCompatActivity {
                     if (mTask != null && (mTask.getStatus() != AsyncTask.Status.FINISHED)) {mTask.cancel(true);}
                     mTask = new YelpAsyncTask();
                     String search = mEditText.getText().toString();
-                    String mUrl = mSearchString + search;
-                    mTask.execute(mUrl);
+                    mTask.execute(search);
                 } else {Toast.makeText(MainActivity.this, "No network connection detected", Toast.LENGTH_SHORT).show();}
-
             }
         });
     }
@@ -89,16 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected YelpSearchResults doInBackground(String... params) {
-            String data ="";
-            try {
-                URL url = new URL(params[0]);
-                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                connection.connect();
-                InputStream inStream = connection.getInputStream();
-                data = getInputData(inStream);
-            } catch (Throwable e) {
-                e.printStackTrace();
-            }
+            YelpAPI credentials = new YelpAPI(YelpAPI.CONSUMER_KEY,YelpAPI.CONSUMER_SECRET,YelpAPI.TOKEN,YelpAPI.TOKEN_SECRET);
+            String data = credentials.searchForBusinessesByKeyword(params[0]);
 
             //Gson object to convert JSON data into java class
             Gson gson = new Gson();
@@ -120,14 +107,5 @@ public class MainActivity extends AppCompatActivity {
             }
             mAdapter.notifyDataSetChanged();
         }
-    }
-
-    private String getInputData(InputStream inStream) throws IOException {
-        StringBuilder builder = new StringBuilder();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inStream));
-        String data = null;
-        while ((data = reader.readLine()) != null){builder.append(data);}
-        reader.close();
-        return builder.toString();
     }
 }
