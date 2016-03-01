@@ -3,7 +3,10 @@ package com.example.kylemcnee.apiandgsonlab;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,22 +14,42 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView mTextView;
-    String mQuery;
-
-
+    private ArrayList<MarvelCharacter> mCharacters;
+    private CharacterAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mCharacters = new ArrayList<>();
+        mAdapter = new CharacterAdapter(this, mCharacters);
+        ((RecyclerView) findViewById(R.id.recycler)).setAdapter(mAdapter);
+
+        final EditText input = (EditText) findViewById(R.id.input);
+        Button button = (Button) findViewById(R.id.button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String query = input.getText().toString();
+                if (query.isEmpty()) {
+                    input.setError("Please enter a query");
+                    input.requestFocus();
+                } else {
+                    SearchAsyncTask task = new SearchAsyncTask();
+                    task.execute(query);
+                }
+            }
+        });
     }
 
     public class SearchAsyncTask extends AsyncTask<String, Void, Void>{
@@ -66,11 +89,14 @@ public class MainActivity extends AppCompatActivity {
 
         private String getUrlString(String query)
                 throws UnsupportedEncodingException, NoSuchAlgorithmException {
-            String mUrl = "http://gateway.marvel.com/v1/public/characters?nameStartsWith=%s&ts=%d&apikey=%s&hash=%s";
+            final String URL = "http://gateway.marvel.com/v1/public/characters?nameStartsWith=%s&ts=%d&apikey=%s&hash=%s";
+
+            query = URLEncoder.encode(query, "UTF-8");
             long ts = System.currentTimeMillis();
             String publicKey = getString(R.string.marvel_public_key);
             String privateKey = getString(R.string.marvel_private_key);
-            return String.format(mUrl, query, ts, publicKey, getMarvelMd5Digest(ts, privateKey, publicKey));
+
+            return String.format(URL, query, ts, publicKey, getMarvelMd5Digest(ts, privateKey, publicKey));
         }
 
         private String getMarvelMd5Digest(long timeStamp, String privateKey, String publicKey)
