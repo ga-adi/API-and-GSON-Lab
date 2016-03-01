@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">APIAndGson</string>
+    <string name="public_key">d0a295d3c2ba15c3678190ed39755410</string>
+    <string name="private_key">da7488c4f04f34ee52c45bc2b023238d76df47f1</string>
+    <string name="hash">88761a34b4ad34448c92cb6de8e451dd</string>
+
+</resources>
