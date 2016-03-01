@@ -8,12 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.gson.Gson;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
@@ -24,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<MarvelCharacter> mCharacters;
     private CharacterAdapter mAdapter;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public class SearchAsyncTask extends AsyncTask<String, Void, Void>{
+    public class SearchAsyncTask extends AsyncTask<String, Void, MarvelSearchResult>{
 
         @Override
-        protected Void doInBackground(String... params) {
-            String search = "";
+        protected MarvelSearchResult doInBackground(String... params) {
+            String search;
             try {
                 URL url = new URL(getUrlString(params[0]));
                 HttpURLConnection connection = (HttpURLConnection)url.openConnection();
@@ -64,14 +69,26 @@ public class MainActivity extends AppCompatActivity {
 
                 connection.connect();
                 InputStream inputStream = connection.getInputStream();
-                String data = getInputData(inputStream);
+                search = getInputData(inputStream);
 
-                //call Gson.fromJson(data)
+                Gson gson = new Gson();
+                return gson.fromJson(search, MarvelSearchResult.class);
 
             } catch (Exception e) {
                 e.printStackTrace();
+                return null;
             }
-            return null;
+        }
+
+        @Override
+        protected void onPostExecute(MarvelSearchResult marvelSearchResult) {
+            super.onPostExecute(marvelSearchResult);
+
+            if (marvelSearchResult != null) {
+                mCharacters.clear();
+                mCharacters.addAll(marvelSearchResult.getData().getResults());
+                mAdapter.notifyDataSetChanged();
+            }
         }
 
         private String getInputData(InputStream inStream) throws IOException{
@@ -105,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
             byte[] inputBytes = inputString.getBytes("UTF-8");
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] digest = md.digest(inputBytes);
-            return digest.toString();
+            //TODO - this method of turning digest to a string doesn't work
+            return new String(digest);
         }
-
     }
 }
