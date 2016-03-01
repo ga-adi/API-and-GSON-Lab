@@ -17,13 +17,18 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    ArrayList<MarvelCharacter> mCharacters;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mCharacters = new ArrayList<>();
     }
 
     public class SearchAsyncTask extends AsyncTask<String, Void, MarvelSearchResult>{
@@ -44,10 +49,23 @@ public class MainActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+
+
             Gson gson = new Gson();
             MarvelSearchResult result = gson.fromJson(search, MarvelSearchResult.class);
 
             return result;
+        }
+
+        @Override
+        protected void onPostExecute(MarvelSearchResult marvelSearchResult) {
+            super.onPostExecute(marvelSearchResult);
+
+            mCharacters.clear();
+            mCharacters.addAll(marvelSearchResult.getData().getResults());
+
+            //TODO notify adapter
+
         }
 
         private String getInputData(InputStream inStream) throws IOException{
