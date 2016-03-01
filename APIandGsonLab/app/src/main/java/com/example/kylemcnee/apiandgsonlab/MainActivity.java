@@ -3,6 +3,7 @@ package com.example.kylemcnee.apiandgsonlab;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
         mCharacters = new ArrayList<>();
         mAdapter = new CharacterAdapter(this, mCharacters);
-        ((RecyclerView) findViewById(R.id.recycler)).setAdapter(mAdapter);
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler);
+        RecyclerView.LayoutManager manager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(manager);
+        recyclerView.setAdapter(mAdapter);
 
         final EditText input = (EditText) findViewById(R.id.input);
         Button button = (Button) findViewById(R.id.button);
@@ -118,12 +123,23 @@ public class MainActivity extends AppCompatActivity {
 
         private String getMarvelMd5Digest(long timeStamp, String privateKey, String publicKey)
                 throws UnsupportedEncodingException, NoSuchAlgorithmException {
+
             String inputString = timeStamp + privateKey + publicKey;
             byte[] inputBytes = inputString.getBytes("UTF-8");
+
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] digest = md.digest(inputBytes);
-            //TODO - this method of turning digest to a string doesn't work
-            return new String(digest);
+
+            // see http://stackoverflow.com/a/15485672
+            StringBuilder sb = new StringBuilder();
+            for (byte b : digest) {
+                String conversion = Integer.toString(b & 0xFF,16);
+                while (conversion.length() < 2) {
+                    conversion = "0" + conversion;
+                }
+                sb.append(conversion);
+            }
+            return sb.toString();
         }
     }
 }
