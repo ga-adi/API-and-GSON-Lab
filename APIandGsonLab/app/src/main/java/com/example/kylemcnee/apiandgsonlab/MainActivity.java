@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     String mQuery;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(String... params) {
+            String search = "";
             try {
                 URL url = new URL(getUrlString(params[0]));
                 HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+                connection.setRequestMethod("GET");
 
                 connection.connect();
                 InputStream inputStream = connection.getInputStream();
